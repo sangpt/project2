@@ -1,0 +1,54 @@
+<div class="container"><h2>Search</h2></div>
+<div class="container">
+  <ul  class="nav nav-pills">
+    <li class="active">
+      <a  href="#1b" data-toggle="tab">Users</a>
+    </li>
+    <li><a href="#2b" data-toggle="tab">Posts</a>
+    </li>
+    <li><a href="#3b" data-toggle="tab">Comments</a>
+    </li>
+    <li><a href="#4a" data-toggle="tab">Tags</a>
+    </li>
+  </ul>
+
+  <div class="tab-content clearfix">
+    <div class="tab-pane active" id="1b">
+      <ul class="users">
+        <%= render @users %>
+      </ul>
+    </div>
+    <div class="tab-pane" id="2b">
+      <div class="row">
+        <div class="col-md-8">
+          <ol class="posts" id="posts">
+            <%= render @posts %>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="3b">
+      <div class="row">
+        <div class="col-md-8">
+          <ol class="posts" id="posts">
+            <% @comments.each do |comment| %>
+              <%= render comment.post %>
+            <% end %>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="4a">
+      <div class="row">
+        <div class="col-md-8">
+          <ol class="posts" id="posts">
+            <% @tags.each do |tag| %>
+              <%= render tag.posts %>
+            <% end %>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

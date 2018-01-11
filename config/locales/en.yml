@@ -1,0 +1,67 @@
+en:
+  app_name: "fakebook"
+  static_pages:
+    home:
+      title: "Home"
+    help:
+      title: "Help"
+    contact:
+      title: "Contact"
+    about:
+      title: "About"
+  layouts:
+    header:
+      users: "Users"
+      help: "Help"
+      log_in: "Log in"
+    footer:
+      all_right: "All rights reserved"
+  devise:
+    registrations:
+      edit:
+        leave_blank: "(leave blank if you don't want to change it)"
+        we_need: "(we need your current password to confirm your changes)"
+        title: "Edit"
+        unhappy: "Unhappy"
+        cancel_my_account: "Cancel my account"
+        update: "Update"
+        you_sure: "Are you sure?"
+      new:
+        your_name: "Your name"
+        your_email: "Your email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        sign_up: "Sign up"
+        or: "Or"
+    sessions:
+      new:
+        title: "Sign in"
+        or: "Or"
+    shared:
+      socials:
+        sign_in_with: "Sign in with"
+  shared:
+    comment_form:
+      placeholder: "Type comment here..."
+    post_form:
+      placeholder_title: "Type title here..."
+      placeholder_content: "Type content here..."
+      post: "Post"
+    stats:
+      posts: "Posts"
+      following: "Following"
+      followers: "Followers"
+  users:
+    unfollow:
+      title: "Unfollow"
+    follow:
+      title: "Follow"
+    user:
+      you_sure: "Are you sure?"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+  posts:
+    edit_form:
+      post: "Edit"

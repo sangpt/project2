@@ -1,0 +1,28 @@
+<span class="info">
+  <span id="like-number-<%= post.id %>" class="like-number">
+    <%= post.likes.size %>
+    <%= "like".pluralize post.likes.size %>
+  </span>
+  <span id="comment-number-<%= post.id %>">
+    <%= post.comments.size %>
+    <%= "comment".pluralize post.comments.size %>
+  </span>
+</span>
+<div class="post-action">
+  <% if current_user.liked? post %>
+  <span class="delete-like" data-id="<%= post.id %>" id="like-<%= post.id %>">
+    <span class="glyphicon glyphicon-thumbs-up"></span> Like
+  </span>
+  <% else %>
+  <span class="like" data-id="<%= post.id %>" id="like-<%= post.id %>">
+    <span class="glyphicon glyphicon-thumbs-up"></span> Like
+  </span>
+  <% end %>
+  <span class="show-comment">Comment</span>
+  <span class="dropdown">
+    <span class="dropdown-toggle" data-toggle="dropdown">Share</span>
+    <ul class="dropdown-menu">
+      <%= social_share_button_tag(post.title, url: post_url(post)) %>
+    </ul>
+  </span>
+</div>

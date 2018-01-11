@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-6">
+    <%= link_to omniauth_authorize_path(resource_name, :facebook),
+      class: "btn btn-block btn-social btn-facebook" do %>
+      <%= t ".sign_in_with" %> Facebook
+      <i class="fa fa-facebooj"></i>
+    <% end %>
+  </div>
+  <div class="col-md-6">
+    <%= link_to omniauth_authorize_path(resource_name, :google_oauth2),
+      class: "btn btn-block btn-social btn-google" do %>
+      <%= t ".sign_in_with" %> Google
+      <i class="fa fa-google"></i>
+    <% end %>
+  </div>
+</div>
