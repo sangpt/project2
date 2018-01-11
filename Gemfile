@@ -49,8 +49,6 @@ group :development, :test do
   gem "rspec-collection_matchers"
   gem "rspec-html-matchers"
   gem "rspec-rails"
-  gem "rubocop", "~> 0.35.0", require: false
-  gem "rubocop-checkstyle_formatter", require: false
   gem "scss_lint", require: false
   gem "scss_lint_reporter_checkstyle", require: false
   gem "selenium-webdriver"
