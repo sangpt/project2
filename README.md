@@ -1,24 +1,58 @@
-# README
+Project 2
+=========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Đề tài
+Xây dựng ứng dụng mạng xã hội
 
-Things you may want to cover:
+## Sinh viên thực hiện
+* Họ và tên: **Phạm Tuấn Sang**
+* MSSV: 20146596
 
-* Ruby version
+## Giảng viên hướng dẫn
+* **T.S Nguyễn Tuấn Dũng**
 
-* System dependencies
 
-* Configuration
+## Hướng dẫn cài đặt
 
-* Database creation
+Download source code về máy
+```sh
+$ git clone https://github.com/sangpt/project2
+```
 
-* Database initialization
+Cài đặt gem
+```sh
+$ bundle install --without production
+```
+Tạo file config database theo đường dẫn
+`config/database.yml`
 
-* How to run the test suite
+Tạo database
+```sh
+$ rails db:create
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Tạo các bảng
+```sh
+$ rails db:migrate
+```
 
-* Deployment instructions
+Tạo dữ liệu master data
+```sh
+$ rails db:seed
+```
 
-* ...
+Chạy server
+```sh
+$ rails server
+```
+
+Sau đó có thể truy cập theo đường dẫn http://localhost:3000 và sử dụng tài khoản
+admin@gmail.com / 12345678 là tài khoản admin
+
+## Live demo
+```
+https://sangpt-project2.herokuapp.com
+```
+
+## Giấy phép
+Project này sử dụng giấy phép [MIT License](https://opensource.org/licenses/MIT)
